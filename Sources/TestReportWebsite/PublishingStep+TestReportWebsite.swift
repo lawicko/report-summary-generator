@@ -54,7 +54,7 @@ extension PublishingStep {
         case let str where str.contains(ReportTypes.slather.rawValue):
             try addItem(.slather, from: folder, context: &context)
         default:
-            print("WARNING: Unknown report type in \(folder.name)")
+            print("WARNING: Unknown report type: \(folder.name)")
         }
     }
 
