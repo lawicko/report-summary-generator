@@ -284,7 +284,7 @@ extension PublishingStep {
             let errorNo = Int(errors)!
             let warningNo = Int(warnings)!
             violations = String(errorNo + warningNo)
-        case .junit:
+        case .xml:
             let errorNo = contents.components(separatedBy: "error:").count - 1
             let warnNo = contents.components(separatedBy: "warning:").count - 1
             errors = String(errorNo)
